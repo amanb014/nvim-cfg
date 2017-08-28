@@ -1,8 +1,8 @@
 hi clear
 syntax reset
-let g:colors_name = "def"
+let g:colors_name = "gp_basic"
 if &background == "light"
-    hi Boolean gui=NONE guifg=#707070 guibg=NONE
+    hi Boolean gui=NONE guifg=#6a80a4 guibg=NONE
     hi ColorColumn gui=NONE guifg=NONE guibg=#f5f5f5
     hi Comment gui=NONE guifg=#969696 guibg=NONE
     hi Conceal gui=NONE guifg=#707070 guibg=NONE
@@ -28,8 +28,8 @@ if &background == "light"
     hi ModeMsg gui=NONE guifg=NONE guibg=NONE
     hi MoreMsg gui=NONE guifg=NONE guibg=NONE
     hi NonText gui=NONE guifg=#c2c2c2 guibg=NONE
-    hi Normal gui=NONE guifg=#000000 guibg=#ffffff
-    hi Number gui=NONE guifg=#707070 guibg=NONE
+    hi Normal gui=NONE guifg=#5c5c5c guibg=#ffffff
+    hi Number gui=bold guifg=#78a46a guibg=NONE
     hi Pmenu gui=NONE guifg=NONE guibg=#f5f5f5
     hi PmenuSbar gui=NONE guifg=NONE guibg=#ededed
     hi PmenuSel gui=NONE guifg=NONE guibg=#e3e3e3
@@ -37,17 +37,17 @@ if &background == "light"
     hi Question gui=NONE guifg=NONE guibg=NONE
     hi Search gui=NONE guifg=NONE guibg=#ededed
     hi SignColumn gui=NONE guifg=#c2c2c2 guibg=NONE
-    hi Special gui=NONE guifg=#707070 guibg=NONE
+    hi Special gui=NONE guifg=#6a80a4 guibg=NONE
     hi SpecialKey gui=NONE guifg=#c2c2c2 guibg=NONE
     hi SpellBad gui=undercurl guisp=NONE guifg=NONE guibg=#fff0f0
     hi SpellCap gui=undercurl guisp=NONE guifg=NONE guibg=NONE
     hi SpellLocal gui=undercurl guisp=NONE guifg=NONE guibg=#f0fff0
     hi SpellRare gui=undercurl guisp=NONE guifg=NONE guibg=#ededed
-    hi Statement gui=NONE guifg=#4a4a4a guibg=NONE
+    hi Statement gui=NONE guifg=#6a80a4 guibg=NONE
     hi StatusLine gui=NONE guifg=#262626 guibg=#ededed
     hi StatusLineNC gui=NONE guifg=#969696 guibg=#ededed
-    hi StorageClass gui=NONE guifg=#4a4a4a guibg=NONE
-    hi String gui=NONE guifg=#707070 guibg=NONE
+    hi StorageClass gui=bold guifg=#6a80a4 guibg=NONE
+    hi String gui=NONE guifg=#6a80a4 guibg=NONE
     hi TabLine gui=NONE guifg=#969696 guibg=#ededed
     hi TabLineFill gui=NONE guifg=NONE guibg=#ededed
     hi TabLineSel gui=NONE guifg=#262626 guibg=#ededed
@@ -64,11 +64,11 @@ if &background == "light"
     hi Identifier gui=NONE guifg=NONE guibg=NONE
     hi PreProc gui=NONE guifg=NONE guibg=NONE
 elseif &background == "dark"
-    hi Boolean gui=NONE guifg=#808080 guibg=NONE
+    hi Boolean gui=NONE guifg=#d6d6d6 guibg=NONE
     hi ColorColumn gui=NONE guifg=NONE guibg=#1a1a1a
     hi Comment gui=NONE guifg=#707070 guibg=NONE
     hi Conceal gui=NONE guifg=#808080 guibg=NONE
-    hi Conditional gui=NONE guifg=#ffffff guibg=NONE
+    hi Conditional gui=NONE guifg=#d6d6d6 guibg=NONE
     hi Constant gui=NONE guifg=#808080 guibg=NONE
     hi Cursor gui=reverse guifg=NONE guibg=NONE
     hi CursorColumn gui=NONE guifg=NONE guibg=#1a1a1a
@@ -90,8 +90,8 @@ elseif &background == "dark"
     hi ModeMsg gui=NONE guifg=NONE guibg=NONE
     hi MoreMsg gui=NONE guifg=NONE guibg=NONE
     hi NonText gui=NONE guifg=#616161 guibg=NONE
-    hi Normal gui=NONE guifg=#adadad guibg=#141414
-    hi Number gui=NONE guifg=#808080 guibg=NONE
+    hi Normal gui=NONE guifg=#b0b0b0 guibg=#0a0a0a
+    hi Number gui=bold guifg=#698091 guibg=NONE
     hi Pmenu gui=NONE guifg=NONE guibg=#1a1a1a
     hi PmenuSbar gui=NONE guifg=NONE guibg=#262626
     hi PmenuSel gui=NONE guifg=NONE guibg=#333333
@@ -99,17 +99,17 @@ elseif &background == "dark"
     hi Question gui=NONE guifg=NONE guibg=NONE
     hi Search gui=NONE guifg=NONE guibg=#262626
     hi SignColumn gui=NONE guifg=#616161 guibg=NONE
-    hi Special gui=NONE guifg=#ffffff guibg=NONE
+    hi Special gui=NONE guifg=#808080 guibg=NONE
     hi SpecialKey gui=NONE guifg=#616161 guibg=NONE
     hi SpellBad gui=undercurl guisp=NONE guifg=NONE guibg=#260808
     hi SpellCap gui=undercurl guisp=NONE guifg=NONE guibg=NONE
     hi SpellLocal gui=undercurl guisp=NONE guifg=NONE guibg=#082608
     hi SpellRare gui=undercurl guisp=NONE guifg=NONE guibg=#262626
-    hi Statement gui=NONE guifg=#ffffff guibg=NONE
+    hi Statement gui=NONE guifg=#d6d6d6 guibg=NONE
     hi StatusLine gui=NONE guifg=#9e9e9e guibg=#262626
     hi StatusLineNC gui=NONE guifg=#707070 guibg=#262626
-    hi StorageClass gui=NONE guifg=#8f8f8f guibg=NONE
-    hi String gui=NONE guifg=#ffffff guibg=NONE
+    hi StorageClass gui=bold guifg=#d6d6d6 guibg=NONE
+    hi String gui=NONE guifg=#698091 guibg=NONE
     hi TabLine gui=NONE guifg=#707070 guibg=#262626
     hi TabLineFill gui=NONE guifg=NONE guibg=#262626
     hi TabLineSel gui=NONE guifg=#9e9e9e guibg=#262626

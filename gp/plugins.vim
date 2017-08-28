@@ -102,12 +102,13 @@ let g:session_directory = "~/.config/nvim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "yes"
 let g:session_command_aliases = 1
+let g:session_persist_colors = 0
 
 
 " airline
+" NOTE: set airline theme in colors.vim!
 let g:airline_powerline_fonts = 1 " auto enable powerline fonts
 let g:airline_skip_empty_sections = 1
-let g:airline_theme = 'powerlineish'
 " show open buffers
 let g:airline#extensions#tabline#enabled = 1
 " only show title in open buffers bar
