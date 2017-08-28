@@ -37,6 +37,7 @@ set mousemodel=popup
 " cause ctrl+w to always delete previous word (instead of only words entered
 " since beginning of current insert mode)
 set backspace=indent,eol,start
+set mouse=nicr " fix mouse for iTerm2
 
 "==========================
 " indentation
@@ -51,6 +52,7 @@ set backspace=indent,eol,start
 " searching
 "==========================
 " set hlsearch " enable highlighting of search results - bound to key in keys.vim
+set nohlsearch "disable search highlighting (it's on by default)
 set incsearch
 set ignorecase
 set smartcase
