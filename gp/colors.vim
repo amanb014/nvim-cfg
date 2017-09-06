@@ -2,15 +2,36 @@ set t_Co=256
 set termguicolors
 
 "==========================
-" light
+" light themes
 "==========================
-set background=light
-color gp_basic
-let g:airline_theme = 'papercolor'
+
+function! SetThemeLight()
+    set background=light
+    color gp_basic
+    let g:airline_theme = 'papercolor'
+    if exists(":AirlineRefresh")
+        exec "AirlineRefresh"
+    endif
+endfunction
 
 "==========================
-" dark
+" dark themes
 "==========================
-" set background=dark
-" color gp_basic
-" let g:airline_theme = 'powerlineish'
+
+function! SetThemeDark()
+    set background=dark
+    color gp_basic
+    let g:airline_theme = 'powerlineish'
+    if exists(":AirlineRefresh")
+        exec "AirlineRefresh"
+    endif
+endfunction
+
+"==========================
+" defaults
+"==========================
+
+" set theme on startup
+call SetThemeLight()
+" call SetThemeDark()
+
