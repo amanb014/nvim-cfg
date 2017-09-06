@@ -55,7 +55,7 @@ cnoreabbrev Q q
 cnoreabbrev Qall qall
 nnoremap <silent> <leader>sh :terminal<CR>
 " close buffer in current split without losing split
-nnoremap <silent> <leader>x :b #\|:bd #
+nnoremap <silent> <leader>x :b #\|:bd #<CR>
 nmap <C-_> gcc
 " leader,ctrl-h to toggle search highlighting
 nnoremap <leader><C-h> :set hls!\|set hls?<CR>
