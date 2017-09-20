@@ -20,7 +20,8 @@ endfunction
 
 function! SetThemeDark()
     set background=dark
-    color gp_basic
+    " color gp_basic
+    color nimbostratus
     let g:airline_theme = 'powerlineish'
     if exists(":AirlineRefresh")
         exec "AirlineRefresh"
@@ -32,6 +33,6 @@ endfunction
 "==========================
 
 " set theme on startup
-call SetThemeLight()
-" call SetThemeDark()
+" call SetThemeLight()
+call SetThemeDark()
 
