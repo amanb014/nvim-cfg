@@ -13,6 +13,7 @@ set modelines=10
 set hidden
 set nowrap
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+set cursorline
 
 "==========================
 " lines

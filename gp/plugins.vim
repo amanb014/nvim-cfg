@@ -91,11 +91,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 let g:ctrlp_custom_ignore='node_modules'
 
 " indentline
-let g:indentLine_enabled = 0
+let g:indentLine_enabled = 1
 let g:indentLine_concealcursor = 0
 let g:indentLine_faster = 1
-let g:indentLine_char = '│'
-" let g:indentLine_char = '┆'
+" let g:indentLine_char = '│'
+let g:indentLine_char = '┆'
 
 " session management
 let g:session_directory = "~/.config/nvim/session"
